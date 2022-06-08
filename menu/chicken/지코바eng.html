@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link type="text/css" rel="stylesheet" href="babencss.css">
+        <script>
+            function itemSum(){
+                var n1 = parseInt(document.getElementById("list1").value);
+                var n2 = parseInt(document.getElementById("list2").value);
+                var n3 = parseInt(document.getElementById("list3").value);
+                var n4 = parseInt(document.getElementById("list4").value);
+                var n5 = parseInt(document.getElementById("list5").value);
+                var n6 = parseInt(document.getElementById("list6").value);
+                var n7 = parseInt(document.getElementById("list7").value);
+        
+                var p1 = parseInt(document.getElementById("amt1").value);
+                var p2 = parseInt(document.getElementById("amt2").value);
+                var p3 = parseInt(document.getElementById("amt3").value);
+                var p4 = parseInt(document.getElementById("amt4").value);
+                var p5 = parseInt(document.getElementById("amt5").value);
+                var p6 = parseInt(document.getElementById("amt6").value);
+                var p7 = parseInt(document.getElementById("amt7").value);
+        
+        
+                var t1 = n1 * p1
+                var t2 = n2 * p2
+                var t3 = n3 * p3
+                var t4 = n4 * p4
+                var t5 = n5 * p5
+                var t6 = n6 * p6
+                var t7 = n7 * p7
+        
+                var totalsum = t1 + t2 + t3 + t4 + t5 + t6 + t7
+                
+                document.getElementById("totalsum").value = totalsum;
+            }
+            
+        function checkForNumber() {
+          var key = event.keyCode;
+          if(!(key==8||key==9||key==13||key==46||key==144||
+              (key>=48&&key<=57)||key==110||key==190)) {
+              event.returnValue = false;
+              alert("숫자를 입력해주세요.");
+          }
+        }
+        
+            </script>
+    </head>
+
+    <body bgcolor=#ffddd5>
+        
+            <div class="header">
+                <a href="../../index/index.html"><img src="../../index/header.jpg" id="header-img"></a>
+            </div>
+
+            <br>
+
+            <div class="category1">
+                    <hr>
+                    <h1>지코바</h1>
+                    <hr>
+            </div>
+
+            <div>
+                <table class="storepicture">
+                    <tr>
+                        <td>
+                        <img src="지코바.jpg" width=300 height=200>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="lists">
+                <p id="storeinfotitle">INOFORMATION</P>
+                <p id="storeinfocontent">Address: 경북 포항시 양덕동 668-1</p>
+                <p id="storeinfocontent">Opening Hours: 11:30-23:30</p>
+            </div>
+
+            <div class="lists">
+                <DL>
+                <DT id="titles">MENU</DT>
+                <p id="categorytitle">MAIN MENU</p>
+                <input type="hidden" id="list1" value="17000">Sogeum Guyi Chicken<p id="price">--- 17,000won<input type="text" id="amt1" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <input type="hidden" id="list2" value="19000">Sogeum Guyu Sunsal Chicken<p id="price">--- 19,000won<input type="text" id="amt2" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <input type="hidden" id="list3" value="18000">Yangnyum Guyi Chicken<p id="price">--- 18,000won<input type="text" id="amt3" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <input type="hidden" id="list4" value="20000">Sunsal Yangnyum Guyi Chicken<p id="price">--- 20,000won<input type="text" id="amt4" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <br>
+                <p id="categorytitle">SIDE DISH</p>
+                <input type="hidden" id="list5" value="1500">Rice<p id="price">--- 1,500won<input type="text" id="amt5" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <input type="hidden" id="list6" value="500">Chicken Raddish<p id="price">--- 500won<input type="text" id="amt6" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>
+                <input type="hidden" id="list7" value="1000">Drinks<p id="price">--- 1,000won<input type="text" id="amt7" value="0" class="amount" placeholder="수량" onkeypress="checkForNumber();" /></p>\
+                </DL>
+                <input type="button" id="sum" value="Total" onClick="itemSum();"/><input id="totalsum" value="0" type="text" size="20" readonly/>
+            </div>
+
+            <br>
+
+            <div class="cartandgame">
+                <a href="더치페이.html"><button>Dutch Treat</button></a>
+            </div>

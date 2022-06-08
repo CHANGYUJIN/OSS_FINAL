@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>배달의 한동</title>
+        
+        <link type="text/css" rel="stylesheet" href="indexcss.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Noto+Sans+KR|Sunflower:300&display=swap" rel="stylesheet">
+        
+        <script type="text/javascript">
+        
+        // possible 검색 키워드를 통한 검색
+        function Menus(){
+            var input=document.getElementById("search").value;
+            
+            // 카테고리
+            if (input=="한식")
+            window.location.assign("../menu/hansik/menu1.html");
+            else if (input=="분식")
+            window.location.assign("../menu/bunsik/menu2.html");
+            else if (input=="일식")
+            window.location.assign("../menu/ilsik/menu3.html");
+            else if (input=="치킨")
+            window.location.assign("../menu/chicken/menu4.html");
+            else if (input=="피자")
+            window.location.assign("../menu/pizza/menu5.html");
+            else if (input=="중식")
+            window.location.assign("../menu/jungsik/menu6.html");
+
+            // 한식
+            else if (input=="바벤")
+            window.location.assign("../menu/hansik/baben.html");
+            else if (input=="두마리"||input=="두마리찜닭")
+            window.location.assign("../menu/hansik/두마리찜닭.html");
+            else if (input=="구주삼")
+            window.location.assign("../menu/hansik/구주삼.html");
+            else if (input=="궁물촌")
+            window.location.assign("../menu/hansik/궁물촌.html");
+            else if (input=="토시래")
+            window.location.assign("../menu/hansik/토시래.html");
+            else if (input=="삼촌네"||input=="삼촌네찜닭")
+            window.location.assign("../menu/hansik/삼촌네찜닭.html");
+
+            // 분식
+            else if (input=="모범"||input=="모범떡볶이")
+            window.location.assign("../menu/bunsik/모범떡볶이.html");
+            else if (input=="죠스"||input=="죠스떡볶이")
+            window.location.assign("../menu/bunsik/죠스떡볶이.html");
+            else if (input=="청년"||input=="청년다방"||input=="다방")
+            window.location.assign("../menu/bunsik/청년다방.html");
+            else if (input=="신전"||input=="신전떡볶이")
+            window.location.assign("../menu/bunsik/신전떡볶이.html");
+            else if (input=="빨봉"||input=="빨봉분식")
+            window.location.assign("../menu/bunsik/빨봉분식.html");
+
+            // 일식
+            else if (input=="우공"||input=="우공피쉬")
+            window.location.assign("../menu/ilsik/우공피쉬.html");
+            else if (input=="아비꼬")
+            window.location.assign("../menu/ilsik/아비꼬.html");
+            else if (input=="쿡"||input=="쿡피쉬")
+            window.location.assign("../menu/ilsik/쿡피쉬.html");
+            else if (input=="혜화동"||input=="혜화동돈까스"||input=="혜화동돈까스극장"||input=="극장"||input=="돈까스극장")
+            window.location.assign("../menu/ilsik/혜화동돈까스극장.html");
+            
+            
+            // 치킨
+            else if (input=="미쳐버린"||input=="미쳐버린파닭")
+            window.location.assign("menu1.html");
+            else if (input=="치킨플러스"||input=="플러스")
+            window.location.assign("menu1.html");
+            else if (input=="수비드"||input=="수비드68도"||input=="68도")
+            window.location.assign("menu1.html");
+            else if (input=="처갓집양념치킨"||input=="처갓집")
+            window.location.assign("menu1.html");
+            else if (input=="지코바")
+            window.location.assign("menu1.html");
+            else if (input=="네네치킨"||input=="네네")
+            window.location.assign("menu1.html");
+            else if (input=="푸라닭")
+            window.location.assign("menu1.html");
+            else if (input=="사계절"||input=="사계절두마리"||input=="사계절두마리치킨"||input=="사계절두마리치킨파티"||input=="치킨파티")
+            window.location.assign("menu1.html");
+            else if (input=="노랑"||input=="노랑통닭")
+            window.location.assign("menu1.html");
+            else if (input=="땅땅"||input=="땅땅치킨")
+            window.location.assign("menu1.html");
+            else if (input=="교촌"||input=="교촌치킨")
+            window.location.assign("menu1.html");
+            else if (input=="쌀"||input=="쌀통닭")
+            window.location.assign("menu1.html");
+            else if (input=="치코"||input=="치코파닭")
+            window.location.assign("menu1.html");
+            else if (input=="슈닭")
+            window.location.assign("menu1.html");
+            else if (input=="파닭")
+            window.location.assign("menu1.html");
+
+            // 피자
+            else if (input=="비스트로"||input=="비스트로피자")
+            window.location.assign("../menu/pizza/비스트로피자.html");
+            else if (input=="네오"||input=="네오피자")
+            window.location.assign("../menu/pizza/네오피자.html");
+            else if (input=="알볼로"||input=="피자알볼로")
+            window.location.assign("../menu/pizza/피자알볼로.html");
+
+            // 중식
+            else if (input=="사천성")
+            window.location.assign("../menu/jungsik/사천성.html");
+            else if (input=="쓰촨1995"||input=="쓰촨"||input=="1995")
+            window.location.assign("../menu/jungsik/쓰촨1995.html");
+
+            //그 외의 키워드 입력
+            else
+            alert("존재하지 않는 정보입니다.")
+        }       
+        </script>
+
+        </head>
+
+        <body bgcolor=#ffddd5>
+
+        <!-- 홈페이지의 로고 -->
+        <div class="header">
+            <a href="index.html"><img src="header.jpg" id="header-img"></a>
+        </div>
+
+        <!-- 검색 기능 -->
+        <div class="search">
+            
+            <!-- 검색 인풋 박스 -->
+            <input id="search" type="text" placeholder="카테고리를 검색해 주세요." onkeypress="if(event.keyCode===13){Menus();}">
+            
+            <!-- 검색 버튼 -->
+            <button onclick="Menus();">검색</button>
+
+        </div>
+
+        <!--장바구니와 음식월드컵 버튼-->
+        <div class="cartandgame">
+            <a href=""><button>음식월드컵</button></a>
+        </div>
+
+        <br>
+        
+    <!-- 메뉴 카테고리 -->
+        <!-- 한식 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/hansik/menu1.html" alt=준비중입니다.><img src='koreanfood.jpg' onmouseover="this.src='한식.jpg';"onmouseout="this.src='koreanfood.jpg';" width=300; height=300/></a></td>
+            </tr>
+            </table>
+        </div>
+        
+        <!-- 분식 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/bunsik/menu2.html"><img src="bunsik.jpg" onmouseover="this.src='분식.jpg';"onmouseout="this.src='bunsik.jpg';" width=300 height=300></a></td>
+            </tr>
+            </table>
+        </div>          
+        
+        <!-- 일식 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/ilsik/menu3.html"><img src="ilsik.jpg" onmouseover="this.src='일식.jpg';"onmouseout="this.src='ilsik.jpg';" width=300 height=300></a></td>
+            </tr>
+            </table>
+        </div>
+        
+        <!-- 치킨 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/chicken/menu4.html"><img src="chicken.jpg" onmouseover="this.src='치킨.jpg';"onmouseout="this.src='chicken.jpg';" width=300 height=300></a></td>
+            </tr>
+            </table>
+        </div>
+        
+        <!-- 피자 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/pizza/menu5.html"><img src="pizza.jpg" onmouseover="this.src='피자.jpg';"onmouseout="this.src='pizza.jpg';" width=300 height=300></a></td>
+            </tr>
+            </table>
+        </div>
+        
+        <!-- 중식 -->
+        <div>
+            <table class="category">
+            <tr>
+            <td><a href="../menu/jungsik/menu6.html"><img src="jungsik.jpg" onmouseover="this.src='중식.jpg';"onmouseout="this.src='jungsik.jpg';" width=300 height=300></a></td>
+            </tr>
+            </table>
+        </div>
+
+        <!--영어모드-->
+        <div class="translation">
+            <a href="indexeng.html"><button>ENGLISH</button></a>
+        </div>
+
+</body>
+ 
+</html>

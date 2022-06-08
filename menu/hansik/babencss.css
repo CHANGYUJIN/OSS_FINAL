@@ -1,0 +1,137 @@
+/* 가장 위의 카테고리 이름 스타일 */
+.category1 {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    border: 3;
+    color: #5b5b5b;
+    background-color: white;
+}
+
+/* hr 스타일 */
+hr {
+    border: 1px solid #bd5c47;
+}
+
+/* 가게 사진 스타일 */
+.storepicture {
+    background-color: #bd5c47;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+/* 가게정보 스타일 */
+#storeinfotitle {
+    font-size: 28pt;
+    color: #5b5b5b;
+    text-align: center;
+    margin-left: -600px;
+    margin-bottom: -5px;
+}
+
+/* 가게정보 부속 스타일 */
+#storeinfocontent {
+    text-align: center;
+    color: #6d6d6d;
+    margin-left: -600px;
+}
+
+/* 카테고리 타이틀 스타일 */
+#titles {
+    font-size: 28pt;
+    color: #5b5b5b;
+    text-align: center;
+    margin-left: -600px;
+    margin-bottom: -5px;
+    margin-top: 50px;
+}
+
+/* 부속 카테고리 타이틀 스타일 */
+#categorytitle {
+    text-align: center;
+    margin-left: -600px;
+    text-decoration: underline;
+}
+
+/* 메뉴 클래스 스타일 */
+.lists {
+    font-family: 'Jua', sans-serif;
+    text-align: left;
+    font-size: 15pt;
+    color: #5b5b5b;
+    margin-left: 600px;
+}
+
+/* 가격표 스타일 */
+#price {
+    margin-left: 45px;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+/* 합계 버튼 스타일 */
+#sum {
+    text-align: center;
+    margin-left: 270px;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    width: 70px;
+    height: 46px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* 합계 출력창 스타일 */
+#totalsum {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* 수량 스타일 */
+.amount {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    margin-left: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    float: right;
+    margin-top: -22px;
+    margin-right: 600px;
+}
+
+.cartandgame {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+
+/* 더치페이 버튼 스타일 */
+.cartandgame button {
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    border: 3px;
+    background: #c6614c;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+}
