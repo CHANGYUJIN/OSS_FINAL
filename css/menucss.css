@@ -1,4 +1,5 @@
-/* 가장 위의 카테고리 이름 스타일 */
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Noto+Sans+KR|Sunflower:300&display=swap');
+
 .category1 {
     text-align: center;
     font-family: 'Jua', sans-serif;
@@ -7,12 +8,10 @@
     background-color: white;
 }
 
-/* hr 스타일 */
 hr {
     border: 1px solid #bd5c47;
 }
 
-/* 가게 사진 스타일 */
 .storepicture {
     background-color: #bd5c47;
     padding: 2px;
@@ -21,7 +20,7 @@ hr {
     margin-top: 25px;
 }
 
-/* 가게정보 스타일 */
+
 #storeinfotitle {
     font-size: 28pt;
     color: #5b5b5b;
@@ -30,14 +29,12 @@ hr {
     margin-bottom: -5px;
 }
 
-/* 가게정보 부속 스타일 */
 #storeinfocontent {
     text-align: center;
     color: #6d6d6d;
     margin-left: -600px;
 }
 
-/* 카테고리 타이틀 스타일 */
 #titles {
     font-size: 28pt;
     color: #5b5b5b;
@@ -47,14 +44,12 @@ hr {
     margin-top: 50px;
 }
 
-/* 부속 카테고리 타이틀 스타일 */
 #categorytitle {
     text-align: center;
     margin-left: -600px;
     text-decoration: underline;
 }
 
-/* 메뉴 클래스 스타일 */
 .lists {
     font-family: 'Jua', sans-serif;
     text-align: left;
@@ -63,14 +58,12 @@ hr {
     margin-left: 600px;
 }
 
-/* 가격표 스타일 */
 #price {
     margin-left: 45px;
     font-size: 14px;
     color: #6d6d6d;
 }
 
-/* 합계 버튼 스타일 */
 #sum {
     text-align: center;
     margin-left: 270px;
@@ -82,7 +75,6 @@ hr {
     margin-bottom: 25px;
 }
 
-/* 합계 출력창 스타일 */
 #totalsum {
     text-align: center;
     font-family: 'Jua', sans-serif;
@@ -93,7 +85,6 @@ hr {
     margin-bottom: 25px;
 }
 
-/* 수량 스타일 */
 .amount {
     width: 30px;
     height: 20px;
@@ -106,13 +97,12 @@ hr {
     margin-right: 600px;
 }
 
-.cartandgame {
+.game {
     font-family: 'Jua', sans-serif;
     text-align: center;
 }
 
-/* 더치페이 버튼 스타일 */
-.cartandgame button {
+.game button {
     font-family: 'Jua', sans-serif;
     font-size: 18px;
     text-align: center;
@@ -124,11 +114,6 @@ hr {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 30px;
-}
-
-#header-img {
-    width: 100%;
-    height: 100%;
 }
 
 #header-img {

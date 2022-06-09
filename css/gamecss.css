@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Noto+Sans+KR|Sunflower:300&display=swap');
+
+body {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    border: 3;
+    color: #5b5b5b;
+    background-color: white;
+}
+
+hr {
+    border: 1px solid #bd5c47;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}

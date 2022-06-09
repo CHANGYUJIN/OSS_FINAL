@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>음식월드컵</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/indexcss.css">
+    <link type="text/css" rel="stylesheet" href="../css/gamecss.css">
+</head>
+
+<script>
+    var menus = [];
+    var menus_cp = [];
+    var num1 = 0;
+    var num2 = 0;
+    var cnt1 = 0;
+    var cnt2 = 0;
+
+    window.onload = function () {
+        for (i = 0; i < 32; i++) {
+            menus[i] = "menu" + (i + 1) + ".jpg";
+        }
+        menus.sort(function (a, b) { return 0.5 - Math.random() });
+        display(num1);
+    }
+
+    function display(n) {
+        document.getElementById('menus').src = menus[n];
+        if(menus.length == 1){
+            document.getElementById('menus_cp').src = "finalText.jpg";
+            cnt2 = -1;
+        }
+        else{
+            document.getElementById('menus_cp').src = menus[n+1];
+            cnt2++;
+        }
+    }
+
+    function gameStart(n) {
+        if (cnt2 != -1) {
+            if (n == 0)
+                menus_cp[num2++] = menus[num1];
+            else
+                menus_cp[num2++] = menus[num1 + 1];
+
+            cnt1++;
+            num1 += 2;
+
+            if (cnt1 == menus.length / 2) {
+                for (i = 0; i < menus_cp.length; i++) {
+                    menus[i] = menus_cp[i];
+                    menus_cp[i] = null;
+                }
+                menus.splice(cnt1);
+                cnt1 = 0;
+                num1 = 0;
+                num2 = 0;
+            }
+            
+            display(num1);
+        }
+
+    }
+</script>
+
+<body bgcolor=#ffddd5>
+    <!-- 홈페이지의 로고 -->
+    <div class="header">
+        <a href="../index/Index.html"><img src="../index/header.jpg" id="header-img"></a>
+    </div>
+    <div class="title">
+        <hr>
+        <h1>음식월드컵</h1>
+        <hr>
+    </div>
+    <img id="menus" onclick="gameStart(0)">
+    <img id="menus_cp" onclick="gameStart(1)">
+</body>
+
+</html>
