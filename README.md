@@ -13,7 +13,7 @@
   4. run 'git clone URL' command where URL is the one you copied in step 2.
   5. Open 'Index.html' file.
 # Where can people get more help, if needed?
-  You can contact me at 'yujin@handong.ac.kr'
+  You can contact me at yujin@handong.ac.kr.
   For technical issues, GOOGLE would be more helpful.
 # Presentation Video (YouTube) Link
   https://www.youtube.com/watch?v=XLZHSCpMYco
